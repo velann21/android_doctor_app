@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Dr Borus</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_dr_testing">Welcome Dr. Testing</string>
+    <string name="general">GENERAL</string>
+    <string name="procedure">PROCEDURE</string>
+    <string name="patient_report">PATIENT REPORT</string>
+    <string name="chat">CHAT</string>
+    <string name="payment_history">PAYMENT HISTORY</string>
+    <string name="offers">OFFERS</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="edit_emp">Edit Emp</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="register">Register</string>
+    <string name="employee_detail_update">Employee Detail Update</string>
+    <string name="update">Update</string>
+    <string name="password">Password</string>
+    <string name="mobile">Mobile</string>
+    <string name="name">Name</string>
+    <string name="profile_detail_update">PROFILE DETAIL UPDATE</string>
+    <string name="sample_sending_procedure">Sample Sending Procedure</string>
+    <string name="direct_sample_indirect_sample">Direct Sample/ Indirect Sample</string>
+    <string name="direct_sample">DIRECT SAMPLE</string>
+    <string name="direct_sample_message">For Complete analysis with Motility, Patients should be present on the branch with directed abstination dates</string>
+    <string name="image_report">+IMAGE REPORT</string>
+    <string name="video_report">+ VIDEO REPORT</string>
+    <string name="indirect_sample_courier_for_dna_amp_morphology"><![CDATA[INDIRECT SAMPLE (Courier for DNA & Morphology)]]></string>
+    <string name="collect_the_patient_sample">- Collect the patient sample.</string>
+    <string name="measure_the_volume">- Measure the Volume</string>
+    <string name="centrifuge_it_in_1500rpm_for_three_minutes">- Centrifuge it in 1500RPM for three Minutes.</string>
+    <string name="remove_the_supernatant_completely_and_add_1ml_normal_saline_in_the_pellet">- Remove the supernatant completely and add 1ml normal saline in the pellet.</string>
+    <string name="replace_it_in_a_1ml_cap_vial">- Replace it in a 1ml cap vial.</string>
+    <string name="cap_it_and_send_it_through_courier">- Cap it and send it through Courier.</string>
+</resources>

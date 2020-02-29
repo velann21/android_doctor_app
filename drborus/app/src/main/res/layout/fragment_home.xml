@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="35dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_dr_borus_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/welcome_dr_testing"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivLogo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGeneral"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintEnd_toStartOf="@id/ivProcedure"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:srcCompat="@drawable/ic_general" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/general"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@id/ivGeneral"
+            app:layout_constraintStart_toStartOf="@id/ivGeneral"
+            app:layout_constraintTop_toBottomOf="@id/ivGeneral" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProcedure"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintEnd_toStartOf="@id/ivReport"
+            app:layout_constraintStart_toEndOf="@id/ivGeneral"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:srcCompat="@drawable/ic_procedure" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvProcedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/procedure"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@id/ivProcedure"
+            app:layout_constraintStart_toStartOf="@id/ivProcedure"
+            app:layout_constraintTop_toBottomOf="@id/ivProcedure" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivReport"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivProcedure"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:srcCompat="@drawable/ic_report" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/patient_report"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@id/ivReport"
+            app:layout_constraintStart_toStartOf="@id/ivReport"
+            app:layout_constraintTop_toBottomOf="@id/ivReport" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivChat"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toStartOf="@id/ivPayment"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvGeneral"
+            app:srcCompat="@drawable/ic_chat" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/chat"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@id/ivChat"
+            app:layout_constraintStart_toStartOf="@id/ivChat"
+            app:layout_constraintTop_toBottomOf="@id/ivChat" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPayment"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toStartOf="@id/ivOffer"
+            app:layout_constraintStart_toEndOf="@id/ivChat"
+            app:layout_constraintTop_toBottomOf="@id/tvGeneral"
+            app:srcCompat="@drawable/ic_payment" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/payment_history"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@id/ivPayment"
+            app:layout_constraintStart_toStartOf="@id/ivPayment"
+            app:layout_constraintTop_toBottomOf="@id/ivPayment" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivOffer"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivProcedure"
+            app:layout_constraintTop_toBottomOf="@id/tvGeneral"
+            app:srcCompat="@drawable/ic_offer" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOffer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/offers"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@id/ivOffer"
+            app:layout_constraintStart_toStartOf="@id/ivOffer"
+            app:layout_constraintTop_toBottomOf="@id/ivOffer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
