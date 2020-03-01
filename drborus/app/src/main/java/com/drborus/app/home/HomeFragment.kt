@@ -7,10 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.drborus.app.R
 import com.drborus.app.general.GeneralFragment
+import com.drborus.app.procedure.OffersFragment
+import com.drborus.app.procedure.PaymentFragment
 import com.drborus.app.procedure.ProcedureFragment
+import com.drborus.app.procedure.ReportFragment
 import kotlinx.android.synthetic.main.fragment_home.*
 
-class HomeFragment : Fragment(), View.OnClickListener {
+class HomeFragment : Fragment() {
 
     companion object {
         fun newInstance(): HomeFragment =
@@ -27,40 +30,15 @@ class HomeFragment : Fragment(), View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        ivGeneral.setOnClickListener {
-            activity!!.supportFragmentManager.beginTransaction().addToBackStack(null).
-                add(R.id.flContainer, GeneralFragment.newInstance()).commit()
-        }
-        ivProcedure.setOnClickListener {
-            activity!!.supportFragmentManager.beginTransaction().addToBackStack(null).
-                add(R.id.flContainer, ProcedureFragment.newInstance()).commit()
-        }
-//        ivReport.setOnClickListener { this }
-//        ivChat.setOnClickListener { this }
-//        ivPayment.setOnClickListener { this }
-//        ivOffer.setOnClickListener { this }
-    }
-
-    override fun onClick(v: View?) {
-        when (v?.id) {
-            R.id.ivGeneral -> {
-
-            }
-            R.id.ivProcedure -> {
-
-            }
-            R.id.ivReport -> {
-
-            }
-            R.id.ivChat -> {
-
-            }
-            R.id.ivPayment -> {
-
-            }
-            R.id.ivOffer -> {
-
-            }
-        }
+        ivGeneral.setOnClickListener { activity!!.supportFragmentManager.beginTransaction().addToBackStack(null).
+            add(R.id.flContainer, GeneralFragment.newInstance()).commit()}
+        ivProcedure.setOnClickListener { activity!!.supportFragmentManager.beginTransaction().addToBackStack(null).
+            add(R.id.flContainer, ProcedureFragment.newInstance()).commit()}
+        ivReport.setOnClickListener { activity!!.supportFragmentManager.beginTransaction().addToBackStack(null).
+            add(R.id.flContainer, ReportFragment.newInstance()).commit()}
+        ivPayment.setOnClickListener { activity!!.supportFragmentManager.beginTransaction().addToBackStack(null).
+            add(R.id.flContainer, PaymentFragment.newInstance()).commit()}
+        ivOffer.setOnClickListener { activity!!.supportFragmentManager.beginTransaction().addToBackStack(null).
+            add(R.id.flContainer, OffersFragment.newInstance()).commit()}
     }
 }

@@ -1,9 +1,7 @@
 <resources>
     <string name="app_name">Dr Borus</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="welcome_dr_testing">Welcome Dr. Testing</string>
+    <string name="welcome_dr_test">Welcome Dr. Test</string>
     <string name="general">GENERAL</string>
     <string name="procedure">PROCEDURE</string>
     <string name="patient_report">PATIENT REPORT</string>
@@ -33,4 +31,11 @@
     <string name="remove_the_supernatant_completely_and_add_1ml_normal_saline_in_the_pellet">- Remove the supernatant completely and add 1ml normal saline in the pellet.</string>
     <string name="replace_it_in_a_1ml_cap_vial">- Replace it in a 1ml cap vial.</string>
     <string name="cap_it_and_send_it_through_courier">- Cap it and send it through Courier.</string>
+    <string name="report">Report</string>
+    <string name="refferal_message">1.Refer and GET TWO SAMPLES FREE (CLICK HERE TO SHARE)</string>
+    <string name="s_no">S:NO</string>
+    <string name="date">DATE</string>
+    <string name="bill">BILL</string>
+    <string name="account">ACCOUNT</string>
+    <string name="amount">AMOUNT</string>
 </resources>
